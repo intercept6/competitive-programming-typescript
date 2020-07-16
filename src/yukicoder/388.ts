@@ -4,11 +4,10 @@ function Main(input: string) {
   const data = input.split('\n');
 
   const firstLine = data[0].split(' ');
-  const secondLine = data[1];
+  const s = Number(firstLine[0]);
+  const f = Number(firstLine[1]);
 
-  const c = parseInt(firstLine[0]) + parseInt(firstLine[1]);
-
-  console.log(c + ' ' + secondLine);
+  console.log(Math.floor(s / f) + 1);
 }
 
 Main(readFileSync('/dev/stdin', 'utf8'));
