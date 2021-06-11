@@ -3,7 +3,12 @@ module.exports = {
     es2020: true,
     node: true,
   },
-  extends: ['standard', 'eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'standard',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 11,
